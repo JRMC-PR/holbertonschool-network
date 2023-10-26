@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# find the host on a network
+#!/usr/bin/env bash
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 {IP_ADDRESS}" >&2
+    exit 1
+fi
+
+ping -c 5 "$1"
